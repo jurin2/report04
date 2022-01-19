@@ -4,104 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Document</title>
 
-    <!-- meta -->
-    <meta name="description" content="나의 프로필">
-    <meta name="keywords" content="프로필,profile,사진">
-    <meta name="author" content="heo eun hye">
+     <!-- meta -->
+     <meta name="description" content="나의 프로필">
+     <meta name="keywords" content="프로필,profile,사진">
+     <meta name="author" content="heo eun hye">
+ 
+     <!-- sns 오픈그래픽 -->
+     <meta property="og:title" content="나의 프로필">
+     <meta property="og:url" content="https://jurin2.github.io/report04/">
+     <meta property="og:image" content="./images/og-img.jpg">
+     <meta property="og:description" content="나를 소개합니다">
+     
+     <!-- 트위터카드 -->
+     <meta name="twitter:card" content="summary">
+     <meta name="twitter:title" content="나의 프로필">
+     <meta name="twitter:url" content="https://jurin2.github.io/report04">
+     <meta name="twitter:image" content="./images/og-img.jpg">
+     <meta name="twitter:description" content="나를 소개합니다">
+ 
+     <!-- favicon -->
+     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+ 
+     <!-- font-awesome 5.15.4 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!-- reset -->
+     <link rel="stylesheet" href="./css/reset.css">
 
-    <!-- sns 오픈그래픽 -->
-    <meta property="og:title" content="나의 프로필">
-    <meta property="og:url" content="https://jurin2.github.io/report04/">
-    <meta property="og:image" content="./images/og-img.jpg">
-    <meta property="og:description" content="나를 소개합니다">
-    
-    <!-- 트위터카드 -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="나의 프로필">
-    <meta name="twitter:url" content="https://jurin2.github.io/report04">
-    <meta name="twitter:image" content="./images/og-img.jpg">
-    <meta name="twitter:description" content="나를 소개합니다">
+     <!-- style css -->
+     <link rel="stylesheet" href="./css/defult.css">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-
-    <!-- font-awesome 5.15.4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- reset -->
-    <link rel="stylesheet" href="./css/reset.css">
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <style>
-    .main .circle .img-box{
-        background-image: url(./images/bic-circle.jpg);  
-    }
-
-    </style>
 </head>
 <body>
+    <a class="skip-menu" href="#photos">메인으로 가기</a>
+
     <section class="wrap">
         <header class="header">
-            <div class="container">
-                <h1 class="logo">Profile</h1>
-                <div class="left-menu">
-                    <div class="btn-nav clearfix">
-                        <span class="line">라인1</span>
-                        <span class="line">라인2</span>
-                        <span class="line">라인3</span>
-                    </div>
-                    <div class="search">
-                        <i class="fas fa-search"></i>
-                    </div>
+            <div class="container clearfix">
+                <div class="btn-nav clearfix" id="btn-nav">
+                    <span class="line">라인1</span>
+                    <span class="line">라인2</span>
+                    <span class="line">라인3</span>
                 </div>
-                <div class="right-menu">
-                    <div class="user">
-                        <i class="fas fa-user-alt"></i>
-                    </div>
-                    <div class="comments">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="bottom-line">
-            긴라인
-        </section>
-        <section class="main">
-            <div class="container">
-                <div class="circle">
-                        <div class="img-box">
-                            <span>50%</span>    
-                        </div>
-                    <p>Complate</p>      
-                </div>
-                <div class="info">
-                    <p>Hong Gil-dong</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Seoul, joongu</p>
-                </div> 
-                <div class="follow">
-                    <ul>
+                <div class="nav">
+                    <ul class="nav-list">
                         <li>
-                            <p>1,120</p>
-                            <p>팔로워</p>
+                            <a href="./index.html">HOME</a>
                         </li>
-                        <li class="line">라인</li>
                         <li>
-                            <p>1,567</p>
-                            <p>팔로윙</p>
+                            <a href="#">FOLLOWING</a>
                         </li>
-                        <li class="line">라인</li>
                         <li>
-                            <p>678</p>
-                            <p>사진첩</p>
+                            <a href="#">SEARCH</a>
+                        </li>
+                        <li>
+                            <a href="#">MAP</a>
                         </li>
                     </ul>
                 </div>
-                <div class="photos">
+
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                </div>
+              
+                <h1 class="logo">Profile</h1>
+                
+                <div class="user">
+                    <i class="fas fa-user-alt"></i>
+                </div>
+
+                <div class="comments">
+                    <i class="fas fa-comments"></i>
+                </div>
+                
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="container">
+                <div class="box">
+                        <div class="big-circle big01"></div>
+                        <div class="big-circle big02"></div>
+                        <div class="img-box1">
+                            <img src="./images/big-circle.jpg" alt="이미지">
+                        </div>
+                        <div class="sm-circle">50%</div>
+                    </div>
+                </div> 
+
+                <div class="title">Complate</div>
+
+                <div class="info">
+                    <p>Hong Gil-dong</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Seoul, joongu</p>
+                </div>
+
+                <div class="follow">
+                    <div class="content">
+                        <ul class="clearfix">
+                            <li>
+                                <p>1,120</p>
+                                <p>팔로워</p>
+
+                            </li>
+                            <li class="line">라인</li>
+                            <li>
+                                <p>1,567</p>
+                                <p>팔로윙</p>
+                            </li>
+                            <li class="line">라인</li>
+                            <li>
+                                <p>678</p>
+                                <p>사진첩</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="photos" id="photos">
                     <div class="container clearfix">
                         <div class="photo square01" id="photo">
                             <div class="img-box">
@@ -110,12 +132,16 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square01.jpg" alt="이미지1"></div>
-                            <h4 class="sm-tit">아기 사진1</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square01.jpg" alt="이미지1">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진1</h4>
+                                    <span class="close"></span>
+                                </div>
+                                
                             </div>
                         </div>
-
 
                         <div class="photo square02" id="photo">
                             <div class="img-box">
@@ -124,9 +150,13 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square02.jpg" alt="이미지2"></div>
-                            <h4 class="sm-tit">아기 사진2</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square02.jpg" alt="이미지2">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진2</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -137,9 +167,13 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square03.jpg" alt="이미지3"></div>
-                            <h4 class="sm-tit">아기 사진3</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square03.jpg" alt="이미지3">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진3</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -150,9 +184,13 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square04.jpg" alt="이미지4"></div>
-                            <h4 class="sm-tit">아기 사진4</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square04.jpg" alt="이미지4">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진4</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -163,9 +201,13 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square05.jpg" alt="이미지5"></div>
-                            <h4 class="sm-tit">아기 사진5</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square05.jpg" alt="이미지5">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진5</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -176,9 +218,13 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square06.jpg" alt="이미지6"></div>
-                            <h4 class="sm-tit">아기 사진6</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square06.jpg" alt="이미지6">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진6</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -189,9 +235,13 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square07.jpg" alt="이미지7"></div>
-                            <h4 class="sm-tit">아기 사진7</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square07.jpg" alt="이미지7">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진7</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -202,22 +252,25 @@
                         </div>
                         <div class="modal">
                             <div class="contents">
-                                <div class="img-box"><img src="./images/square08.jpg" alt="이미지8"></div>
-                            <h4 class="sm-tit">아기 사진8</h4>
-                            <span class="close">[닫기]</span>
+                                <div class="img-box">
+                                    <img src="./images/big-square08.jpg" alt="이미지8">
+                                </div>
+                                <div class="txt-box">
+                                    <h4 class="sm-tit">아기 사진8</h4>
+                                    <span class="close"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div>    
         </section>
-
+    
         <footer class="footer">
             <div class="container">
                 <ul class="clearfix">
                     <li>
-                        <a href="#"><i class="fas fa-home"></i></a>
+                        <a href="./index.html"><i class="fas fa-home"></i></a>
                     </li>
                     <li>
                         <a href="#"><i class="fas fa-handshake"></i></a>
@@ -232,7 +285,8 @@
             </div>
         </footer>
     </section>
-    <script src="./js/index.js"></script>
 
+    <!-- defult js -->
+    <script src="./js/defult.js"></script>
 </body>
 </html>
